@@ -80,12 +80,17 @@
 	border-color: #687EF0 !important;
 }
 
+.switch-custom.switch-success input:checked ~ span:before {
+	background-color: #31CCA7 !important;
+	border-color: #31CCA7 !important;
+}
+
 .switch-custom input:checked ~ span:after {
 	margin-left: 16px !important;
 }
 
-.switch-custom input:checked ~ b {
-	background-color: #F0F4FE
+.switch-custom.switch-success input:checked ~ b {
+	background-color: #EBFAF7
 }
 
 .switch-custom-2 input ~ span:before {
@@ -163,4 +168,74 @@
 	-ms-transform: none;
 	-o-transform: none;
 	transform: none;
+}
+
+.custom-table {
+	letter-spacing: .2px;
+}
+
+.table thead th,
+.table tbody td {
+	padding: 1.244rem 1.54rem;
+}
+
+.custom-table thead th {
+	background-color: #F7F8FA;
+	color: #9099B1;
+	font-weight: normal;
+}
+
+.custom-table thead th:first-child {
+	border-top-left-radius: 5px;
+}
+
+.custom-table thead th:last-child {
+	border-top-left-radius: 5px;
+}
+
+.accept-block {
+	background-color: #FFDF6D;
+}
+
+.custom-sort-th {
+	position: relative;
+	padding-right: 13px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.custom-sort-th:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	right: 0;
+	width: 7px;
+	height: 10px;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDcgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjUwMDIgMTBMMS4yNzE0NmUtMDcgNkwzIDZMMyAzLjQ5NjkxZS0wN0w0IDIuNjIyNjhlLTA3TDQgNkw3IDZMMy41MDAyIDEwWiIgZmlsbD0iIzkwOTlCMSIvPgo8L3N2Zz4K);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.custom-sort-th.active {
+	color: #628AF1;
+}
+.custom-sort-th.active:after {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDcgMTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjUwMDIgMTBMMS4yNzE0NmUtMDcgNkwzIDZMMyAzLjQ5NjkxZS0wN0w0IDIuNjIyNjhlLTA3TDQgNkw3IDZMMy41MDAyIDEwWiIgZmlsbD0iIzYyOEFGMSIvPgo8L3N2Zz4K);
+}
+
+select.form-control {
+	background-image: url(../media/triangle.svg);
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: top 50% right 18px;
+	padding-right: 33px;
+	padding-left: 20px;
 }

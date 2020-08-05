@@ -8,7 +8,13 @@ $(function() {
 		toggleBy: 'roles-toggle'
 	});
 
-	let ps = new PerfectScrollbar('#roles-content');
+	document.querySelectorAll('.offcanvas-content').forEach(content => {
+		let ps = new PerfectScrollbar(content);
+	});
+
+	$('.custom-sort-th').on('click', function() {
+		$(this).toggleClass('active')
+	});
 
 
 })

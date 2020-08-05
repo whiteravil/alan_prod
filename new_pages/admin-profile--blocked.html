@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<base href="../">
+	<meta charset="utf-8"/>
+	<title>Alanbase</title>
+	<meta name="description" content="Updates and statistics"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+	<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/global/plugins.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/style.bundle.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/layout/header/base/light.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/layout/header/menu/light.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/layout/brand/dark.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/themes/layout/aside/dark.css?v=7.0.6" rel="stylesheet" type="text/css"/>
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
+</head>
+
+<body id="kt_body" class="subheader-enabled page-loading">
+	<div id="kt_header_mobile" class="header-mobile align-items-center">
+		<a href="index.html">
+			<img alt="Logo" src="assets/media/logo.svg" class="h-40px"/>
+		</a>
+		<div class="d-flex align-items-center">
+			<button class="btn p-0 burger-icon burger-icon-left" id="kt_aside_mobile_toggle">
+				<span></span>
+			</button>
+			<button class="btn btn-hover-text-primary p-0 ml-2" id="kt_header_mobile_toggle">
+				<span class="svg-icon svg-icon-xl">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<polygon points="0 0 24 0 24 24 0 24"/>
+							<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+							<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+						</g>
+					</svg>
+				</span>
+			</button>
+		</div>
+	</div>
+	<div class="d-flex flex-column flex-root">
+
+		<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+			<div id="kt_header" class="header">
+				<div class=" container-fluid d-flex align-items-center">
+					<div class="h3 m-0 font-weight-extrabold">My profile</div>
+					<div class="header-menu-wrapper header-menu-wrapper-right ml-auto">
+						<div class="header-menu header-menu-mobile header-menu-layout-default align-items-center">
+							<div class="topbar-item">
+								<div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" data-toggle="dropdown" data-target="">
+									<span class="text-dark font-size-base d-none d-md-inline mr-3">useremail@gmail.com</span>
+									<span class="symbol symbol-lg-35 symbol-25 symbol-light-success symbol-light-dark">
+										<span class="symbol-label font-size-h5 font-weight-extrabold">E</span>
+									</span>
+								</div>
+								<div class="dropdown-menu dropdown-menu-right" style="width: 190px">
+									<ul class="navi navi-hover">
+										<li class="navi-item">
+											<a class="navi-link" href="#">
+												<span class="navi-icon mr-2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M8.04111 15.9161C7.19793 16.7592 6.72914 17.9041 6.49035 19.0981L5.50977 18.9019C5.77097 17.5959 6.30218 16.2408 7.334 15.2089C8.37789 14.1651 9.88643 13.5 12.0001 13.5V14.5C10.1137 14.5 8.87222 15.0849 8.04111 15.9161Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9589 15.9161C16.8021 16.7592 17.2709 17.9041 17.5097 19.0981L18.4902 18.9019C18.229 17.5959 17.6978 16.2408 16.666 15.2089C15.6221 14.1651 14.1136 13.5 11.9999 13.5V14.5C13.8863 14.5 15.1278 15.0849 15.9589 15.9161Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11ZM12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" fill="#9099B1"/>
+													</svg>
+												</span>
+												<span class="navi-text icon-ms">My Profile</span>
+											</a>
+										</li>
+										<li class="navi-item">
+											<a class="navi-link" href="#">
+												<span class="navi-icon mr-2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M8.44238 16.5C8.44238 16.7761 8.66525 17 8.94018 17H20.9446C21.2196 17 21.4424 16.7761 21.4424 16.5C21.4424 16.2238 21.2196 16 20.9446 16H8.94018C8.66525 16 8.44238 16.2238 8.44238 16.5Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 7.5C2.5 7.22386 2.72386 7 3 7H11C11.2761 7 11.5 7.22386 11.5 7.5C11.5 7.77614 11.2761 8 11 8H3C2.72386 8 2.5 7.77614 2.5 7.5Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M17 7.5C17 7.22386 17.2239 7 17.5 7H21C21.2761 7 21.5 7.22386 21.5 7.5C21.5 7.77614 21.2761 8 21 8H17.5C17.2239 8 17 7.77614 17 7.5Z" fill="#9099B1"/>
+														<circle cx="5.5" cy="16.5" r="3" stroke="#9099B1"/>
+														<circle cx="13.5" cy="7.5" r="3" stroke="#9099B1"/>
+													</svg>
+												</span>
+												<span class="navi-text icon-ms">Settings</span>
+											</a>
+										</li>
+										<li class="navi-item">
+											<a class="navi-link" href="#">
+												<span class="navi-icon mr-2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M8 12C8 11.7238 8.22386 11.5 8.5 11.5H20.4352C20.7113 11.5 20.9352 11.7238 20.9352 12C20.9352 12.2761 20.7113 12.5 20.4352 12.5H8.5C8.22386 12.5 8 12.2761 8 12Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M21.0768 11.5921C21.2729 11.7865 21.2744 12.1031 21.08 12.2992L17.1677 16.2469C16.9733 16.443 16.6567 16.4444 16.4606 16.2501C16.2644 16.0557 16.263 15.7391 16.4574 15.543L20.3697 11.5953C20.5641 11.3992 20.8807 11.3977 21.0768 11.5921Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4595 7.64489C16.6557 7.45049 16.9722 7.45189 17.1666 7.64802L21.0789 11.5951C21.2733 11.7913 21.2719 12.1078 21.0758 12.3022C20.8797 12.4966 20.5631 12.4952 20.3687 12.2991L16.4564 8.35199C16.262 8.15586 16.2634 7.83928 16.4595 7.64489Z" fill="#9099B1"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M17.4988 4.35083C17.7172 4.13238 17.6901 3.76979 17.4308 3.60178C15.867 2.58843 14.0022 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C14.0841 22 16.0194 21.3624 17.6213 20.2717C17.8727 20.1005 17.8955 19.7443 17.6804 19.5292C17.5035 19.3524 17.2246 19.3334 17.0171 19.473C15.5836 20.4373 13.8575 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C13.7837 3 15.4463 3.51891 16.8449 4.414C17.0519 4.54651 17.3249 4.52467 17.4988 4.35083Z" fill="#9099B1"/>
+													</svg>
+												</span>
+												<span class="navi-text icon-ms">Log Out</span>
+											</a>
+										</li>
+										<li class="navi-item">
+											<a class="navi-link" href="#">
+												<span class="navi-icon mr-2 d-flex flex-center">
+													<img class="h-20px w-20px rounded-sm" src="assets/media/svg/flags/226-united-states.svg" alt="">
+												</span>
+												<span class="navi-text icon-ms">Switch to EN</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+				<div class="d-flex flex-column-fluid py-8">
+					<div class="container">
+						<div class="row justify-content-center">
+							
+							<div class="col-lg-7">
+								<div class="card border-0">
+
+									<div class="card-body py-14">
+
+										<div class="d-flex align-items-start">
+											
+											<div class="symbol symbol-circle symbol-120 mr-10">
+												<span class="symbol-label" style="background-image: url(assets/media/blocked.jpg);"></span>
+											</div>
+
+											<div class="flex-grow-1">
+												<div class="icon-xxl font-weight-extrabold mb-7">Evgeny Ivanov</div>
+												<div class="font-size-h4 font-weight-bolder mb-1">Аккаунт заблокирован</div>
+												<div class="font-size-h6">Причину можно узнать у вашего администратора</div>
+											</div>
+
+											<div class="w-50 ml-auto text-right">
+												<div class="font-weight-bolder">ID 1002353</div>
+												<div class="text-light">Created 12.09.2020</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
+<!--begin::Global Config(global config for global JS scripts)-->
+<script>
+	var KTAppSettings = {
+		"breakpoints": {
+			"sm": 576,
+			"md": 768,
+			"lg": 992,
+			"xl": 1200,
+			"xxl": 1400
+		},
+		"colors": {
+			"theme": {
+				"base": {
+					"white": "#ffffff",
+					"primary": "#3699FF",
+					"secondary": "#E5EAEE",
+					"success": "#1BC5BD",
+					"info": "#8950FC",
+					"warning": "#FFA800",
+					"danger": "#F64E60",
+					"light": "#E4E6EF",
+					"dark": "#181C32"
+				},
+				"light": {
+					"white": "#ffffff",
+					"primary": "#E1F0FF",
+					"secondary": "#EBEDF3",
+					"success": "#C9F7F5",
+					"info": "#EEE5FF",
+					"warning": "#FFF4DE",
+					"danger": "#FFE2E5",
+					"light": "#F3F6F9",
+					"dark": "#D6D6E0"
+				},
+				"inverse": {
+					"white": "#ffffff",
+					"primary": "#ffffff",
+					"secondary": "#3F4254",
+					"success": "#ffffff",
+					"info": "#ffffff",
+					"warning": "#ffffff",
+					"danger": "#ffffff",
+					"light": "#464E5F",
+					"dark": "#ffffff"
+				}
+			},
+			"gray": {
+				"gray-100": "#F3F6F9",
+				"gray-200": "#EBEDF3",
+				"gray-300": "#E4E6EF",
+				"gray-400": "#D1D3E0",
+				"gray-500": "#B5B5C3",
+				"gray-600": "#7E8299",
+				"gray-700": "#5E6278",
+				"gray-800": "#3F4254",
+				"gray-900": "#181C32"
+			}
+		},
+		"font-family": "Poppins"
+	};
+</script>
+<!--end::Global Config-->
+
+<script src="assets/plugins/global/plugins.bundle.js?v=7.0.6"></script>
+<script src="assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.6"></script>
+<script src="assets/js/scripts.bundle.js?v=7.0.6"></script>
+<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.6"></script>
+<script src="assets/js/pages/widgets.js?v=7.0.6"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

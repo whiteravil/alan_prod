@@ -189,7 +189,7 @@
 		<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
 			<div id="kt_header" class="header">
 				<div class=" container-fluid d-flex align-items-center">
-					<div class="h3 m-0 font-weight-extrabold">Dashboard</div>
+					<div class="h3 m-0 font-weight-extrabold">Products</div>
 					<div class="header-menu-wrapper header-menu-wrapper-right ml-auto">
 						<div class="header-menu header-menu-mobile header-menu-layout-default align-items-center">
 							<div class="topbar-item">
@@ -262,35 +262,6 @@
 					<div class="container-fluid">
 
 						<div class="row">
-							
-							<div class="col-lg-2">
-								<div class="form-group">
-									<label class="form-label">Product</label>
-									<select class="form-control selectpicker" multiple data-live-search="true" data-none-selected-text="Choose" data-none-results-text="Нет результатов" data-live-search-placeholder="Search by ID or name">
-										<option title="All products" selected>All products</option>
-										<option title="Option 1">Option 1</option>
-										<option title="Option 2">Option 2</option>
-										<option title="Option 3">Option 3</option>
-										<option title="Option 4">Option 4</option>
-										<option title="Option 5">Option 5</option>
-										<option title="Option 6">Option 6</option>
-										<option title="Option 7">Option 7</option>
-										<option title="Option 8">Option 8</option>
-										<option title="Option 9">Option 9</option>
-										<option title="Option 10">Option 10</option>
-										<option title="Option 11">Option 11</option>
-										<option title="Option 12">Option 12</option>
-										<option title="Option 13">Option 13</option>
-										<option title="Option 14">Option 14</option>
-										<option title="Option 15">Option 15</option>
-										<option title="Option 16">Option 16</option>
-										<option title="Option 17">Option 17</option>
-										<option title="Option 18">Option 18</option>
-										<option title="Option 19">Option 19</option>
-										<option title="Option 20">Option 20</option>
-									</select>
-								</div>
-							</div>
 
 							<div class="col-lg-2">
 								<div class="form-group">
@@ -360,18 +331,6 @@
 									</select>
 								</div>
 							</div>
-
-							<div class="col-lg-2">
-								<div class="form-group">
-									<label class="form-label">Privasity</label>
-									<select class="form-control selectpicker">
-										<option title="All types" selected>All types</option>
-										<option title="Private">Private</option>
-										<option title="Public">Public</option>
-										<option title="Predemo">Predemo</option>
-									</select>
-								</div>
-							</div>
 						
 							<div class="col-lg-2">
 								<div class="mt-10">
@@ -417,7 +376,7 @@
 													</g>
 												</svg>
 											</span>
-											New offer
+											New product
 										</button>
 									</div>
 
@@ -426,13 +385,14 @@
 								<table class="table table-hover w-100 border-bottom">
 									<thead>
 										<tr>
-											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">OFFER</th>
 											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Product</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Offers</th>
 											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Category</th>
 											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Advertiser</th>
 											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Status</th>
-											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Privasity</th>
-											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase text-right">Creation date</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase text-right">
+												<div class="custom-sort-th">created</div>
+											</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -443,19 +403,16 @@
 														<div class="symbol-label" style="background-image:url(assets/media/users/100_13.jpg)"></div>
 													</div>
 													<div class="ml-5">
-														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<div class="text-dark font-weight-bolder font-size-h6">Product name here</div>
 														<a href="#" class="font-size-sm text-light">Prod1233</a>
 													</div>
 												</div>
 											</td>
-											<td class="align-middle">Product name</td>
-											<td class="align-middle">Category</td>
+											<td class="align-middle">253</td>
+											<td class="align-middle">Category name1</td>
 											<td class="align-middle">Name of advertiser</td>
 											<td class="align-middle">
 												<span class="label label-xl label-light-success label-inline">Active</span>
-											</td>
-											<td class="align-middle">
-												<span class="label label-xl label-light-warning label-inline">Private</span>
 											</td>
 											<td class="align-middle text-right">05.06.2020</td>
 										</tr>
@@ -466,19 +423,16 @@
 														<div class="symbol-label" style="background-image:url(assets/media/users/100_13.jpg)"></div>
 													</div>
 													<div class="ml-5">
-														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<div class="text-dark font-weight-bolder font-size-h6">Product name here</div>
 														<a href="#" class="font-size-sm text-light">Prod1233</a>
 													</div>
 												</div>
 											</td>
-											<td class="align-middle">Product name</td>
-											<td class="align-middle">Category</td>
+											<td class="align-middle">253</td>
+											<td class="align-middle">Category name1</td>
 											<td class="align-middle">Name of advertiser</td>
 											<td class="align-middle">
-												<span class="label label-xl label-light-danger label-inline">Unactive</span>
-											</td>
-											<td class="align-middle">
-												<span class="label label-xl label-light-success label-inline">Public</span>
+												<span class="label label-xl label-light-danger label-inline">Disable</span>
 											</td>
 											<td class="align-middle text-right">05.06.2020</td>
 										</tr>
@@ -489,19 +443,16 @@
 														<div class="symbol-label" style="background-image:url(assets/media/users/100_13.jpg)"></div>
 													</div>
 													<div class="ml-5">
-														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<div class="text-dark font-weight-bolder font-size-h6">Product name here</div>
 														<a href="#" class="font-size-sm text-light">Prod1233</a>
 													</div>
 												</div>
 											</td>
-											<td class="align-middle">Product name</td>
-											<td class="align-middle">Category</td>
+											<td class="align-middle">253</td>
+											<td class="align-middle">Category name1</td>
 											<td class="align-middle">Name of advertiser</td>
 											<td class="align-middle">
 												<span class="label label-xl label-light-success label-inline">Active</span>
-											</td>
-											<td class="align-middle">
-												<span class="label label-xl label-light-dark label-inline">Predemo</span>
 											</td>
 											<td class="align-middle text-right">05.06.2020</td>
 										</tr>
@@ -512,19 +463,16 @@
 														<div class="symbol-label" style="background-image:url(assets/media/users/100_13.jpg)"></div>
 													</div>
 													<div class="ml-5">
-														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<div class="text-dark font-weight-bolder font-size-h6">Product name here</div>
 														<a href="#" class="font-size-sm text-light">Prod1233</a>
 													</div>
 												</div>
 											</td>
-											<td class="align-middle">Product name</td>
-											<td class="align-middle">Category</td>
+											<td class="align-middle">253</td>
+											<td class="align-middle">Category name1</td>
 											<td class="align-middle">Name of advertiser</td>
 											<td class="align-middle">
 												<span class="label label-xl label-light-success label-inline">Active</span>
-											</td>
-											<td class="align-middle">
-												<span class="label label-xl label-light-warning label-inline">Private</span>
 											</td>
 											<td class="align-middle text-right">05.06.2020</td>
 										</tr>
@@ -535,19 +483,16 @@
 														<div class="symbol-label" style="background-image:url(assets/media/users/100_13.jpg)"></div>
 													</div>
 													<div class="ml-5">
-														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<div class="text-dark font-weight-bolder font-size-h6">Product name here</div>
 														<a href="#" class="font-size-sm text-light">Prod1233</a>
 													</div>
 												</div>
 											</td>
-											<td class="align-middle">Product name</td>
-											<td class="align-middle">Category</td>
+											<td class="align-middle">253</td>
+											<td class="align-middle">Category name1</td>
 											<td class="align-middle">Name of advertiser</td>
 											<td class="align-middle">
 												<span class="label label-xl label-light-success label-inline">Active</span>
-											</td>
-											<td class="align-middle">
-												<span class="label label-xl label-light-warning label-inline">Private</span>
 											</td>
 											<td class="align-middle text-right">05.06.2020</td>
 										</tr>
@@ -555,22 +500,19 @@
 											<td class="align-middle">
 												<div class="d-flex align-items-center">
 													<div class="symbol symbol-40 flex-shrink-0">
-														<div class="symbol-label"></div>
+														<div class="symbol-label" style="background-image:url(assets/media/users/100_13.jpg)"></div>
 													</div>
 													<div class="ml-5">
-														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<div class="text-dark font-weight-bolder font-size-h6">Product name here</div>
 														<a href="#" class="font-size-sm text-light">Prod1233</a>
 													</div>
 												</div>
 											</td>
-											<td class="align-middle">Product name</td>
-											<td class="align-middle">Category</td>
+											<td class="align-middle">253</td>
+											<td class="align-middle">Category name1</td>
 											<td class="align-middle">Name of advertiser</td>
 											<td class="align-middle">
 												<span class="label label-xl label-light-success label-inline">Active</span>
-											</td>
-											<td class="align-middle">
-												<span class="label label-xl label-light-warning label-inline">Private</span>
 											</td>
 											<td class="align-middle text-right">05.06.2020</td>
 										</tr>

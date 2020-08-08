@@ -12,6 +12,10 @@ $(function() {
 		let ps = new PerfectScrollbar(content);
 	});
 
+	document.querySelectorAll('.scrollbar-styles').forEach(content => {
+		let ps = new PerfectScrollbar(content);
+	});
+
 	$('.custom-sort-th').on('click', function() {
 		$(this).toggleClass('active')
 	});
@@ -36,6 +40,28 @@ $(function() {
 	}addMinimazeToSmallDesktop();
 
 	$(window).on('resize', addMinimazeToSmallDesktop);
+
+	$(".number-mask").inputmask('decimal', {
+		rightAlignNumerics: false
+	});
+
+	let editGoals = new KTOffcanvas('edit-goals', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+		closeBy: 'roles-close',
+		toggleBy: 'roles-toggle'
+	});
+
+	$('.open-edit').on('click', function(e) {
+		e.preventDefault();
+		editGoals.show();
+	});
+
+	$('.canvas-close').on('click', function(e) {
+		e.preventDefault();
+		editGoals.hide();
+	});
 
 
 });

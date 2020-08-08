@@ -316,6 +316,7 @@ select.form-control {
 
 .bootstrap-select .dropdown-menu .inner {
 	max-height: 250px !important;
+	overflow-x: hidden;
 }
 
 .bootstrap-select.show .dropdown-toggle:after {
@@ -382,6 +383,42 @@ select.form-control {
 	transform: translateY(-2px);
 }
 
+.btn.btn-icon .svg-icon svg {
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+	-o-transform: none !important;
+	transform: none !important;
+}
+
 .table-hover tbody tr:hover .symbol .symbol-label {
 	background-color: #fff;
+}
+
+.bootstrap-select .select-solid ~ .dropdown-toggle {
+	padding-top: .85em;
+	padding-bottom: .85em;
+	background-color: #F5F7F9 !important;
+	border-color: #F5F7F9;
+	font-size: 1.154rem;
+}
+
+.navi .navi-item .navi-link.finished .navi-text {
+	color: #3F4254 !important;
+}
+
+.navi .navi-item .navi-link.finished .navi-icon svg g [fill] {
+	fill: #3F4254 !important;
+}
+
+.cursos-pointer {
+	cursor: pointer;
+}
+
+.scrollbar-styles {
+	position: relative;
+}
+
+.offcanvas-big.offcanvas-right {
+	width: 1010px;
+	right: -1030px;
 }

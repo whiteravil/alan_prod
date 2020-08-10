@@ -34530,13 +34530,13 @@ button {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
   padding: 0.75rem 1.5rem;
-  color: #7E8299; }
+  color: #3F4254; }
   .nav .nav-link .nav-text {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     font-size: 1rem;
-    color: #7E8299;
+    color: #3F4254;
     font-weight: 400;
     -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
     transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
@@ -47427,8 +47427,8 @@ code {
     .label.label-outline-secondary.label-outline-2x {
       border: 2px solid #E4E6EF; }
   .label.label-light-secondary {
-    color: #E4E6EF;
-    background-color: #EBEDF3; }
+    color: #9099B1;
+    background-color: #F4F5F8; }
   .label.label-success {
     color: #ffffff;
     background-color: #31CCA7; }
@@ -55080,7 +55080,7 @@ code {
       background: rgba(54, 153, 255, 0.12) !important;
       color: #628AF1 !important; }
     .daterangepicker .drp-calendar td.in-range.available:not(.active):not(.off):not(.today) {
-      background-color: #F3F6F9;
+      background-color: #E0E8FC;
       color: #3F4254; }
   .daterangepicker select {
     border-radius: 0.42rem;
@@ -59309,7 +59309,7 @@ body {
   .aside-fixed.aside-minimize .wrapper {
     padding-left: 70px; }
   .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    padding: 0 15px 0 25px; } }
+    padding: 0 25px; } }
 
 @media (max-width: 991.98px) {
   .header-mobile-fixed .wrapper {
@@ -61656,7 +61656,7 @@ body {
     box-shadow: 0px 1px 9px -3px rgba(0, 0, 0, 0.25); } }
 
 .offcanvas {
-  z-index: 1001;
+  z-index: 1501;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -61689,7 +61689,7 @@ body {
   bottom: 0;
   right: 0;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 1300;
   -webkit-animation: animation-offcanvas-fade-in .6s ease 1;
   animation: animation-offcanvas-fade-in .6s ease 1; }
 

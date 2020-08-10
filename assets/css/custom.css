@@ -375,13 +375,13 @@ select.form-control {
 	max-height: 260px;
 	overflow-y: auto;
 }
-
+/*
 .btn .svg-icon svg {
 	-webkit-transform: translateY(-2px);
 	-ms-transform: translateY(-2px);
 	-o-transform: translateY(-2px);
 	transform: translateY(-2px);
-}
+}*/
 
 .btn.btn-icon .svg-icon svg {
 	-webkit-transform: none !important;

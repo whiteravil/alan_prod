@@ -189,7 +189,7 @@
 		<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
 			<div id="kt_header" class="header">
 				<div class=" container-fluid d-flex align-items-center">
-					<div class="h3 m-0 font-weight-extrabold">Dashboard</div>
+					<div class="h3 m-0 font-weight-extrabold">Admins</div>
 					<div class="header-menu-wrapper header-menu-wrapper-right ml-auto">
 						<div class="header-menu header-menu-mobile header-menu-layout-default align-items-center">
 							<div class="topbar-item">
@@ -257,160 +257,350 @@
 				</div>
 			</div>
 
+			<div class="subheader py-0 subheader-solid" id="kt_subheader">
+				<div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+					<ul class="nav nav-tabs nav-tabs-line nav-boldest border-0" role="tablist">
+						<li class="nav-item mr-0">
+							<a href="#" class="nav-link border-radius-0 border-3 py-8 text-dark active">
+								<span class="nav-text font-size-h3">Users</span>
+							</a>
+						</li>
+						<li class="nav-item mr-0">
+							<a href="#" class="nav-link border-radius-0 border-3 py-8 text-dark">
+								<span class="nav-text font-size-h3">Roles</span>
+							</a>
+						</li>
+					</ul>
+					<button class="btn btn-sm btn-primary px-5 d-inline-flex flex-center open-create-admin">
+						<span class="svg-icon mr-2 d-inline-flex">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C7.44772 2 7 2.44772 7 3V7H3C2.44772 7 2 7.44772 2 8C2 8.55228 2.44772 9 3 9H7V13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V9H13C13.5523 9 14 8.55228 14 8C14 7.44772 13.5523 7 13 7H9V3C9 2.44772 8.55228 2 8 2Z" fill="white"></path>
+								</g>
+							</svg>
+						</span>
+						New Admin
+					</button>
+				</div>
+			</div>
+
 			<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-				<div class="d-flex flex-column-fluid py-8">
-					<div class="container">
-						<div class="row">
-							
-							<div class="col" style="width: 30%;flex-basis: 30%">
-								<div class="card border-0">
+				<div class="d-flex flex-column-fluid py-0">
+					<div class="container-fluid">
 
-									<div class="card-header pt-13 border-0 text-white" style="background-color: #3F4254">
-										<div class="w-50 ml-auto text-right">
-											<div>ID 1002353</div>
-											<div class="text-white-50">Created 12.09.2020</div>
+						<div class="card card-custom border-0">
+							<div class="card-body">
+
+								<div class="row mb-3">
+									<div class="col-3">
+										<div class="search-form">
+											<div class="input-group">
+												<input type="text" class="form-control form-control-solid search-input" placeholder="Search by ID or name">
+											</div>
+											<div class="search-dropdown">
+												<div class="search-dropdown-list">
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item active">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+													<div class="search-dropdown-item">Autosuggest options</div>
+												</div>
+											</div>
 										</div>
 									</div>
-
-									<div class="card-body pt-0">
-
-										<div class="symbol symbol-circle symbol-100 border-white mt-n22 mb-4 border-3" style="border-style: solid">
-											<span class="symbol-label icon-3x font-weight-extrabold text-light">E</span>
-										</div>
-
-										<div class="icon-xxl font-weight-extrabold mb-7">Evgeny Ivanov</div>
-
-										<div class="navi">
-											<div class="navi-item mb-5">
-												<div class="navi-link p-0">
-													<span class="navi-icon mr-2">
-														<span class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"></rect>
-																	<path d="M6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 Z M7.5,5 C7.22385763,5 7,5.22385763 7,5.5 C7,5.77614237 7.22385763,6 7.5,6 L13.5,6 C13.7761424,6 14,5.77614237 14,5.5 C14,5.22385763 13.7761424,5 13.5,5 L7.5,5 Z M7.5,7 C7.22385763,7 7,7.22385763 7,7.5 C7,7.77614237 7.22385763,8 7.5,8 L10.5,8 C10.7761424,8 11,7.77614237 11,7.5 C11,7.22385763 10.7761424,7 10.5,7 L7.5,7 Z" fill="#000000" opacity="0.3"></path>
-																	<path d="M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z" fill="#000000"></path>
-																</g>
-															</svg>
-														</span>
-													</span>
-													<span class="navi-text font-size-lg text-dark">mymail@gmail.com</span>
-												</div>
-											</div>
-											<div class="navi-item mb-5">
-												<div class="navi-link p-0">
-													<span class="navi-icon mr-2">
-														<span class="svg-icon">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path opacity="0.3" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#B9BFCF"/>
-																<path d="M6.51219 11.7155L16.2674 8.04492C16.7202 7.8853 17.1156 8.15271 16.9689 8.82085L16.9697 8.82002L15.3087 16.4566C15.1856 16.9981 14.856 17.1297 14.3948 16.8746L11.8653 15.0554L10.6453 16.2024C10.5104 16.334 10.3966 16.4451 10.1352 16.4451L10.3148 13.933L15.0027 9.8C15.2067 9.62474 14.9572 9.52601 14.6882 9.70044L8.89492 13.26L6.39752 12.4997C5.85538 12.3318 5.84357 11.9706 6.51219 11.7155Z" fill="#B9BFCF"/>
-															</svg>
-														</span>
-													</span>
-													<span class="navi-text font-size-lg text-dark">egovoruhin</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="separator separator-solid separator-border-2 mt-10 mb-4"></div>
-
-										<div class="navi navi-hover navi-link-rounded navi-active">
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-10 py-4 active">
-													<span class="navi-text font-size-lg text-dark">Managed products</span>
-												</a>
-											</div>
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-10 py-4">
-													<span class="navi-text font-size-lg text-dark">Roles</span>
-												</a>
-											</div>
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-10 py-4">
-													<span class="navi-text font-size-lg text-dark">Edit profile</span>
-												</a>
-											</div>
-											<div class="navi-item mb-0">
-												<a href="#" class="navi-link pl-10 py-4">
-													<span class="navi-text font-size-lg text-dark">Change password</span>
-												</a>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="col" style="width: 70%;flex-basis: 70%">
-								<div class="card card-custom border-0">
-									<div class="card-header">
-										<div class="card-title">
-											<h3 class="card-label">Roles</h3>
-										</div>
-									</div>
-									<div class="card-body p-0">
-										<div class="d-flex">
-											<div class="px-6 py-7 border-right" style="width: 40%">
-												<div class="navi navi-hover navi-link-rounded navi-active">
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Summary</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Role name 1</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4 font-weight-extrabold active">
-															<span class="navi-text font-size-lg text-dark">Hovered & chosed</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Role name 3</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Role name long 4</span>
-														</span>
-													</div>
-												</div>
-											</div>
-											<div class="px-6 py-7" style="width: 60%">
-												<div class="mb-7">
-													<div class="font-weight-extrabold mb-4">Дашборд</div>
-													<div class="mb-3"><a href="#" class="text-dark">Доступ к дашборду</a></div>
-												</div>
-												<div class="mb-7">
-													<div class="font-weight-extrabold mb-4">Администраторы</div>
-													<div class="mb-3"><a href="#" class="text-dark">Просмотр списка администраторов</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Создание администраторов</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Отключение администраторов</a></div>
-												</div>
-												<div class="mb-7">
-													<div class="font-weight-extrabold mb-4">Рекламодатели</div>
-													<div class="mb-3"><a href="#" class="text-dark">Просмотр списка рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Отключение администраторов</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Создание рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Просмотр рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Бан и разбан рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Редактирование рекламодателей</a></div>
-												</div>
-											</div>
+									<div class="col-9">
+										<div class="btn-group mr-7">
+											<button type="button" class="btn btn-secondary py-2">Active</button>
+											<button type="button" class="btn btn-primary py-2">Unactive</button>
 										</div>
 									</div>
 								</div>
-							</div>
 
+								<table class="table table-hover w-100 border-bottom">
+									<thead>
+										<tr>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">OFFER</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Email</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Telegram</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Roles</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Status</th>
+											<th class="align-middle text-gray font-weight-normal text-muted text-uppercase text-right">Creation date</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="align-middle">
+												<div class="d-flex align-items-center">
+													<div class="symbol symbol-40 flex-shrink-0">
+														<div class="symbol-label"></div>
+													</div>
+													<div class="ml-5">
+														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<a href="#" class="font-size-sm text-light">Prod1233</a>
+													</div>
+												</div>
+											</td>
+											<td class="align-middle">email@email.com</td>
+											<td class="align-middle">avatarovich</td>
+											<td class="align-middle">
+												<a href="#"
+													 data-container="body"
+													 data-toggle="popover"
+													 data-trigger="hover"
+													 data-placement="right" 
+													 data-html="true"
+													 data-content="Роль 1, Роль 2, Роль 3, Роль 4"
+													 data-offset="30% 11px">
+													4 roles
+												</a>
+											</td>
+											<td class="align-middle">
+												<span class="label label-xl label-light-success label-inline">Active</span>
+											</td>
+											<td class="align-middle text-right">05.06.2020</td>
+										</tr>
+										<tr>
+											<td class="align-middle">
+												<div class="d-flex align-items-center">
+													<div class="symbol symbol-40 flex-shrink-0">
+														<div class="symbol-label"></div>
+													</div>
+													<div class="ml-5">
+														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<a href="#" class="font-size-sm text-light">Prod1233</a>
+													</div>
+												</div>
+											</td>
+											<td class="align-middle">email@email.com</td>
+											<td class="align-middle">avatarovich</td>
+											<td class="align-middle">
+												<a href="#"
+													 data-container="body"
+													 data-toggle="popover"
+													 data-trigger="hover"
+													 data-placement="right" 
+													 data-html="true"
+													 data-content="Роль 1, Роль 2, Роль 3, Роль 4"
+													 data-offset="30% 11px">
+													4 roles
+												</a>
+											</td>
+											<td class="align-middle">
+												<span class="label label-xl label-light-success label-inline">Active</span>
+											</td>
+											<td class="align-middle text-right">05.06.2020</td>
+										</tr>
+										<tr>
+											<td class="align-middle">
+												<div class="d-flex align-items-center">
+													<div class="symbol symbol-40 flex-shrink-0">
+														<div class="symbol-label"></div>
+													</div>
+													<div class="ml-5">
+														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<a href="#" class="font-size-sm text-light">Prod1233</a>
+													</div>
+												</div>
+											</td>
+											<td class="align-middle">email@email.com</td>
+											<td class="align-middle">avatarovich</td>
+											<td class="align-middle">
+												<a href="#"
+													 data-container="body"
+													 data-toggle="popover"
+													 data-trigger="hover"
+													 data-placement="right" 
+													 data-html="true"
+													 data-content="Роль 1, Роль 2, Роль 3, Роль 4"
+													 data-offset="30% 11px">
+													4 roles
+												</a>
+											</td>
+											<td class="align-middle">
+												<span class="label label-xl label-light-success label-inline">Active</span>
+											</td>
+											<td class="align-middle text-right">05.06.2020</td>
+										</tr>
+										<tr>
+											<td class="align-middle">
+												<div class="d-flex align-items-center">
+													<div class="symbol symbol-40 flex-shrink-0">
+														<div class="symbol-label"></div>
+													</div>
+													<div class="ml-5">
+														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<a href="#" class="font-size-sm text-light">Prod1233</a>
+													</div>
+												</div>
+											</td>
+											<td class="align-middle">email@email.com</td>
+											<td class="align-middle">avatarovich</td>
+											<td class="align-middle">
+												<a href="#"
+													 data-container="body"
+													 data-toggle="popover"
+													 data-trigger="hover"
+													 data-placement="right" 
+													 data-html="true"
+													 data-content="Роль 1, Роль 2, Роль 3, Роль 4"
+													 data-offset="30% 11px">
+													4 roles
+												</a>
+											</td>
+											<td class="align-middle">
+												<span class="label label-xl label-light-success label-inline">Active</span>
+											</td>
+											<td class="align-middle text-right">05.06.2020</td>
+										</tr>
+										<tr>
+											<td class="align-middle">
+												<div class="d-flex align-items-center">
+													<div class="symbol symbol-40 flex-shrink-0">
+														<div class="symbol-label"></div>
+													</div>
+													<div class="ml-5">
+														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<a href="#" class="font-size-sm text-light">Prod1233</a>
+													</div>
+												</div>
+											</td>
+											<td class="align-middle">email@email.com</td>
+											<td class="align-middle">avatarovich</td>
+											<td class="align-middle">
+												<a href="#"
+													 data-container="body"
+													 data-toggle="popover"
+													 data-trigger="hover"
+													 data-placement="right" 
+													 data-html="true"
+													 data-content="Роль 1, Роль 2, Роль 3, Роль 4"
+													 data-offset="30% 11px">
+													4 roles
+												</a>
+											</td>
+											<td class="align-middle">
+												<span class="label label-xl label-light-danger label-inline">Unactive</span>
+											</td>
+											<td class="align-middle text-right">05.06.2020</td>
+										</tr>
+										<tr>
+											<td class="align-middle">
+												<div class="d-flex align-items-center">
+													<div class="symbol symbol-40 flex-shrink-0">
+														<div class="symbol-label"></div>
+													</div>
+													<div class="ml-5">
+														<div class="text-dark font-weight-bolder font-size-h6">Offer name here</div>
+														<a href="#" class="font-size-sm text-light">Prod1233</a>
+													</div>
+												</div>
+											</td>
+											<td class="align-middle">email@email.com</td>
+											<td class="align-middle">avatarovich</td>
+											<td class="align-middle">
+												<a href="#"
+													 data-container="body"
+													 data-toggle="popover"
+													 data-trigger="hover"
+													 data-placement="right" 
+													 data-html="true"
+													 data-content="Роль 1, Роль 2, Роль 3, Роль 4"
+													 data-offset="30% 11px">
+													4 roles
+												</a>
+											</td>
+											<td class="align-middle">
+												<span class="label label-xl label-light-success label-inline">Active</span>
+											</td>
+											<td class="align-middle text-right">05.06.2020</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="d-flex justify-content-between align-items-center flex-wrap">
+									<div class="d-flex flex-wrap py-2 mr-3">
+										<a href="#" class="btn btn-icon btn-sm btn-light-secondary mr-1 h-30px w-30px">
+											<i class="ki ki-double-arrow-back icon-sm text-muted"></i>
+										</a>
+										<a href="#" class="btn btn-icon btn-sm btn-light-secondary mr-1  h-30px w-30px">
+											<i class="ki ki-arrow-back icon-sm text-muted"></i>
+										</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-light mr-1 h-30px w-30px">...</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-bolder mr-1 h-30px w-30px active">1</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-bolder mr-1 h-30px w-30px">2</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-bolder mr-1 h-30px w-30px">3</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-bolder mr-1 h-30px w-30px">4</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-bolder mr-1 h-30px w-30px">5</a>
+										<a href="#" class="btn btn-icon btn-sm border-0 btn-hover-primary font-weight-light mr-1 h-30px w-30px">...</a>
+										<a href="#" class="btn btn-icon btn-sm btn-light-secondary mr-1 h-30px w-30px">
+											<i class="ki ki-double-arrow-next icon-sm text-muted"></i>
+										</a>
+										<a href="#" class="btn btn-icon btn-sm btn-light-secondary mr-1 h-30px w-30px">
+											<i class="ki ki-arrow-next icon-sm text-muted"></i>
+										</a>
+									</div>
+									<div class="d-flex align-items-center py-3">
+										<select class="form-control form-control-sm font-weight-bold mr-4 border-0 bg-light" style="width: 75px;">
+											<option value="10">10</option>
+											<option value="20">20</option>
+											<option value="30">30</option>
+											<option value="50">50</option>
+											<option value="100">100</option>
+										</select>
+									</div>
+								</div>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
 
 		</div>
+	</div>
+</div>
+
+<div id="create-admin" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Create Admin
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">ID</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Email</label>
+				<input type="email" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Имя</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Фамилия</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Telegram</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="d-flex mt-10 justify-content-between">
+				<button type="button" class="btn btn-primary btn-block py-4 icon-ms font-weight-bolder">Create New admin</button>
+			</div>
+		</form>
 	</div>
 </div>
 
@@ -483,6 +673,7 @@
 <script src="assets/js/scripts.bundle.js?v=7.0.6"></script>
 <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.6"></script>
 <script src="assets/js/pages/widgets.js?v=7.0.6"></script>
+<script src="/metronic/theme/html/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-daterangepicker.js?v=7.0.8"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

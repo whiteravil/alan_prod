@@ -65,6 +65,54 @@ $(function() {
 		placement: 'right',
 	});
 
+	let changePassword = new KTOffcanvas('change-password', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let editProfile = new KTOffcanvas('edit-profile', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let createAdmin = new KTOffcanvas('create-admin', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let addGoal = new KTOffcanvas('add-goal', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let addDomen = new KTOffcanvas('add-domen', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let editDomen = new KTOffcanvas('edit-domen', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let addCategory = new KTOffcanvas('add-category', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
+	let editCategory = new KTOffcanvas('edit-category', {
+		overlay: true,
+		baseClass: 'offcanvas',
+		placement: 'right',
+	});
+
 	$('.open-edit').on('click', function(e) {
 		e.preventDefault();
 		editGoals.show();
@@ -80,12 +128,65 @@ $(function() {
 		viewRoles.show();
 	});
 
+	$('.open-change-password').on('click', function(e) {
+		e.preventDefault();
+		changePassword.show();
+	});
+
+	$('.open-edit-profile').on('click', function(e) {
+		e.preventDefault();
+		editProfile.show();
+	});
+
+	$('.open-create-admin').on('click', function(e) {
+		e.preventDefault();
+		createAdmin.show();
+	});
+
+	$('.open-roles').on('click', function(e) {
+		e.preventDefault();
+		roles.show();
+	});
+
+	$('.open-add-goal').on('click', function(e) {
+		e.preventDefault();
+		addGoal.show();
+	});
+
+	$('.open-add-domen').on('click', function(e) {
+		e.preventDefault();
+		addDomen.show();
+	});
+
+	$('.open-edit-domen').on('click', function(e) {
+		e.preventDefault();
+		editDomen.show();
+	});
+
+	$('.open-add-category').on('click', function(e) {
+		e.preventDefault();
+		addCategory.show();
+	});
+
+	$('.open-edit-category').on('click', function(e) {
+		e.preventDefault();
+		editCategory.show();
+	});
+
 	$('.canvas-close').on('click', function(e) {
 		e.preventDefault();
 		editGoals.classOverlay !== undefined ? editGoals.hide() : null;
 		roles.classOverlay !== undefined ? roles.hide() : null;
 		editRoles.classOverlay !== undefined ? editRoles.hide() : null;
 		viewRoles.classOverlay !== undefined ? viewRoles.hide() : null;
+		changePassword.classOverlay !== undefined ? changePassword.hide() : null;
+		editProfile.classOverlay !== undefined ? editProfile.hide() : null;
+		createAdmin.classOverlay !== undefined ? createAdmin.hide() : null;
+		addGoal.classOverlay !== undefined ? addGoal.hide() : null;
+		addDomen.classOverlay !== undefined ? addDomen.hide() : null;
+		editDomen.classOverlay !== undefined ? editDomen.hide() : null;
+		editCategory.classOverlay !== undefined ? editCategory.hide() : null;
+		addCategory.classOverlay !== undefined ? addCategory.hide() : null;
 	});
 
 	$('.daterange-picker').daterangepicker({

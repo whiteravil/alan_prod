@@ -267,7 +267,7 @@
 										<div class="icon-xxl font-weight-extrabold mb-7">New offer</div>
 										<ul class="navi navi-hover navi-active navi-link-rounded">
 											<li class="navi-item">
-												<a class="navi-link h-50px font-weight-bolder mb-3 finished" href="#">
+												<a class="navi-link h-50px font-weight-bolder mb-3 active" href="#">
 													<span class="navi-icon mr-3">
 														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
 															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -277,11 +277,11 @@
 															</g>
 														</svg>
 													</span>
-													<span class="navi-text font-size-h6 text-light">Messages</span>
+													<span class="navi-text font-size-h6 text-light">General data</span>
 												</a>
 											</li>
 											<li class="navi-item">
-												<a class="navi-link h-50px font-weight-bolder mb-3 active" href="#">
+												<a class="navi-link h-50px font-weight-bolder mb-3" href="#">
 													<span class="navi-icon mr-3">
 														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -360,12 +360,187 @@
 									</div>
 								</div>
 								<div class="col-9">
-									<div class="pb-6 pt-18 px-10">
+									<div class="pb-10 pt-18 px-10">
 
 										<div style="max-width: 518px">
 
-											<div class="icon-lg font-weight-bolder text-dark mb-5">Conditions</div>
-											<button class="btn btn-light-primary btn-sm font-weight-bolder px-5">Add first condition</button>
+											<div class="icon-lg font-weight-bolder text-dark mb-5">General data</div>
+
+											<div class="d-flex align-items-center mb-10">
+
+												<div class="btn-group mr-7" role="group">
+													<button type="button" class="btn btn-secondary">Public</button>
+													<button type="button" class="btn btn-primary">Pre-moderation</button>
+													<button type="button" class="btn btn-secondary">Private</button>
+												</div>
+
+												<div class="d-flex align-items-center">
+													<div class="checkbox-list">
+														<label class="checkbox font-size-h6">
+															<input type="checkbox" checked="checked">
+															<span></span>Disabled
+														</label>
+													</div>
+													<div class="svg-icon svg-icon-sm ml-3 cursor-pointer"
+															 data-container="body"
+															 data-toggle="popover"
+															 data-trigger="click"
+															 data-placement="right" 
+															 data-html="true"
+															 data-offset="200% 11px"
+															 data-content="{click_id} - уникальный идентификатор клика;<br>{partner_id} - ID партнера;<br>{offer_id} - ID оффера;<br>{sub_id_1..10} - SubId #1 - SubId #10." data-offset="30% 11px">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="8" cy="8" r="6.5" stroke="#9099B1"></circle>
+															<rect x="7" y="7" width="2" height="5" rx="1" fill="#9099B1"></rect>
+															<rect width="2" height="2" rx="1" transform="matrix(1 0 0 -1 7 6)" fill="#9099B1"></rect>
+														</svg>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="form-group mb-10">
+												<label class="form-label">Offer name</label>
+												<input type="text" class="form-control form-control-solid">
+											</div>
+
+											<div class="form-group mb-10">
+												<label class="form-label d-flex">
+													Product
+													<div class="svg-icon svg-icon-sm ml-3 cursor-pointer"
+															 data-container="body"
+															 data-toggle="popover"
+															 data-trigger="click"
+															 data-placement="right" 
+															 data-html="true"
+															 data-offset="200% 11px"
+															 data-content="{click_id} - уникальный идентификатор клика;<br>{partner_id} - ID партнера;<br>{offer_id} - ID оффера;<br>{sub_id_1..10} - SubId #1 - SubId #10." data-offset="30% 11px">
+														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="8" cy="8" r="6.5" stroke="#9099B1"></circle>
+															<rect x="7" y="7" width="2" height="5" rx="1" fill="#9099B1"></rect>
+															<rect width="2" height="2" rx="1" transform="matrix(1 0 0 -1 7 6)" fill="#9099B1"></rect>
+														</svg>
+													</div>
+												</label>
+												<select class="form-control select-solid selectpicker" data-none-selected-text="Choose..." data-none-results-text="Нет результатов">
+													<option data-hidden="true"></option>
+													<option title="Product number 1">Product number 1</option>
+													<option title="Product number 2">Product number 2</option>
+													<option title="Product number 3">Product number 3</option>
+													<option title="Product number 4">Product number 4</option>
+													<option title="Product number 5">Product number 5</option>
+													<option title="Product number 6">Product number 6</option>
+													<option title="Product number 7">Product number 7</option>
+													<option title="Product number 8">Product number 8</option>
+													<option title="Product number 9">Product number 9</option>
+													<option title="Product number 10">Product number 10</option>
+													<option title="Product number 11">Product number 11</option>
+													<option title="Product number 12">Product number 12</option>
+													<option title="Product number 13">Product number 13</option>
+													<option title="Product number 14">Product number 14</option>
+													<option title="Product number 15">Product number 15</option>
+													<option title="Product number 16">Product number 16</option>
+													<option title="Product number 17">Product number 17</option>
+													<option title="Product number 18">Product number 18</option>
+													<option title="Product number 19">Product number 19</option>
+													<option title="Product number 20">Product number 20</option>
+												</select>
+											</div>
+
+											<div class="row">
+												<div class="col-6">
+													<div class="d-flex align-items-center mb-4">
+														<div class="checkbox-list">
+															<label class="checkbox font-size-h6">
+																<input type="checkbox" checked="checked">
+																<span></span>Use day limit
+															</label>
+														</div>
+														<div class="svg-icon svg-icon-sm ml-3 cursor-pointer"
+																 data-container="body"
+																 data-toggle="popover"
+																 data-trigger="click"
+																 data-placement="right" 
+																 data-html="true"
+																 data-offset="200% 11px"
+																 data-content="{click_id} - уникальный идентификатор клика;<br>{partner_id} - ID партнера;<br>{offer_id} - ID оффера;<br>{sub_id_1..10} - SubId #1 - SubId #10." data-offset="30% 11px">
+															<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<circle cx="8" cy="8" r="6.5" stroke="#9099B1"></circle>
+																<rect x="7" y="7" width="2" height="5" rx="1" fill="#9099B1"></rect>
+																<rect width="2" height="2" rx="1" transform="matrix(1 0 0 -1 7 6)" fill="#9099B1"></rect>
+															</svg>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<input type="text" class="form-control form-control-solid number-mask text-left">
+															<div class="input-group-append">
+																<span class="input-group-text border-0">hours</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="d-flex align-items-center mb-4">
+														<div class="checkbox-list">
+															<label class="checkbox font-size-h6">
+																<input type="checkbox">
+																<span></span>Use hold period
+															</label>
+														</div>
+														<div class="svg-icon svg-icon-sm ml-3 cursor-pointer"
+																 data-container="body"
+																 data-toggle="popover"
+																 data-trigger="click"
+																 data-placement="right" 
+																 data-html="true"
+																 data-offset="200% 11px"
+																 data-content="{click_id} - уникальный идентификатор клика;<br>{partner_id} - ID партнера;<br>{offer_id} - ID оффера;<br>{sub_id_1..10} - SubId #1 - SubId #10." data-offset="30% 11px">
+															<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<circle cx="8" cy="8" r="6.5" stroke="#9099B1"></circle>
+																<rect x="7" y="7" width="2" height="5" rx="1" fill="#9099B1"></rect>
+																<rect width="2" height="2" rx="1" transform="matrix(1 0 0 -1 7 6)" fill="#9099B1"></rect>
+															</svg>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group opacity-50">
+															<input type="text" class="form-control form-control-solid number-mask text-left" disabled>
+															<div class="input-group-append">
+																<span class="input-group-text border-0">days</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label">Poster image</label>
+												<div>
+													<div class="image-input image-input-outline" style="background-image: url(assets/media/offer.jpg)">
+														<div class="image-input-wrapper border-0 shadow-none"></div>
+														<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="Change avatar">
+															<i class="fa fa-pen icon-sm text-muted"></i>
+															<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg">
+															<input type="hidden" name="profile_avatar_remove">
+														</label>
+														<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="" data-original-title="Cancel avatar">
+															<i class="ki ki-bold-close icon-xs text-muted"></i>
+														</span>
+													</div>
+													<span class="form-text text-light">Allowed file types: png, jpg, jpeg.</span>
+												</div>
+											</div>
+
+											<hr class="mt-15 mb-10">
+
+											<div class="d-flex justify-content-between">
+												<button class="btn btn-secondary font-weight-bolder py-4 font-size-h6" data-toggle="modal" data-target="#save-changes">Cancel</button>
+												<button class="btn btn-primary font-weight-bolder py-4 font-size-h6">
+													Continue
+													<i class="la la-long-arrow-alt-right font-size-h2 ml-3 mr-0"></i>
+												</button>
+											</div>
 
 										</div>
 
@@ -378,6 +553,26 @@
 				</div>
 			</div>
 
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="save-changes" tabindex="-1" role="dialog" aria-labelledby="staticBackdrop" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 480px">
+		<div class="modal-content">
+			<div class="modal-header border-0 pt-12">
+				<div class="text-dark font-weight-extrabold display5">Save changes?</div>
+				<button type="button" class="close opacity-100" data-dismiss="modal" aria-label="Close">
+					<i aria-hidden="true" class="ki ki-close font-size-h5 text-dark "></i>
+				</button>
+			</div>
+			<div class="modal-body pt-1">
+				<div class="icon-ms">You have unsaved changes in Basic block of <br>Condition 1.</div>
+			</div>
+			<div class="modal-footer pt-0 border-0 pb-12 justify-content-start">
+				<button type="button" class="btn btn-primary font-weight-bolder font-size-h6 px-10 py-4 mr-5">Yes</button>
+				<button type="button" class="btn btn-light-secondary font-weight-bolder font-size-h6 px-10 py-4">No</button>
+			</div>
 		</div>
 	</div>
 </div>

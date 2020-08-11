@@ -311,30 +311,10 @@
 											<div class="separator separator-dashed flex-grow-1 mx-3 mb-1"></div>
 											<div class="text-dark">Category Name</div>
 										</div>
-										<div class="d-flex align-items-end font-size-h6 mb-5">
+										<div class="d-flex align-items-end font-size-h6 mb-0">
 											<div class="text-muted">Click lifetime</div>
 											<div class="separator separator-dashed flex-grow-1 mx-3 mb-1"></div>
 											<div class="text-dark">4 hours</div>
-										</div>
-
-										<div class="separator separator-solid separator-border-2 mt-10 mb-4"></div>
-
-										<div class="navi navi-hover navi-link-rounded navi-active">
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-5 py-4">
-													<span class="navi-text font-size-lg text-dark">Offers</span>
-												</a>
-											</div>
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-5 py-4">
-													<span class="navi-text font-size-lg text-dark">Events</span>
-												</a>
-											</div>
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-5 py-4 active">
-													<span class="navi-text font-size-lg text-dark">Landings</span>
-												</a>
-											</div>
 										</div>
 
 									</div>
@@ -343,10 +323,28 @@
 
 							<div class="col-lg-9">
 								<div class="card card-custom border-0">
-									<div class="card-header py-5">
-										<div class="card-title w-100">
+									<div class="card-header py-0">
+										<div class="card-title m-0 w-100">
 											<div class="d-flex align-items-center justify-content-between w-100">
-												<div class="icon-lg font-weight-bolder text-dark mr-4">Landings</div>
+
+												<ul class="nav nav-tabs nav-tabs-line nav-boldest border-0" role="tablist">
+													<li class="nav-item mr-0">
+														<a class="nav-link border-radius-0 border-3 py-8 text-dark" data-toggle="tab" href="#tab-1">
+															<span class="nav-text font-size-h3">Offers</span>
+														</a>
+													</li>
+													<li class="nav-item mr-0">
+														<a class="nav-link border-radius-0 border-3 py-8 text-dark" data-toggle="tab" href="#tab-2">
+															<span class="nav-text font-size-h3">Events</span>
+														</a>
+													</li>
+													<li class="nav-item mr-0">
+														<a class="nav-link border-radius-0 border-3 py-8 text-dark active" data-toggle="tab" href="#tab-3">
+															<span class="nav-text font-size-h3">Landings</span>
+														</a>
+													</li>
+												</ul>
+
 												<button class="btn btn-icon btn-light-primary">
 													<span class="svg-icon d-flex">
 														<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -467,7 +465,7 @@
 <div id="edit-goals" class="offcanvas offcanvas-right p-10">
 	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
 		<h1 class="font-weight-extrabold m-0">
-			Edit event
+			Edit landing
 		</h1>
 		<a href="#" class="canvas-close">
 			<i class="ki ki-close icon-md text-dark"></i>
@@ -481,7 +479,23 @@
 				<span class="form-text text-light">От 3 до 30 символов</span>
 			</div>
 			<div class="form-group mb-10">
-				<label class="form-label">Tagget link</label>
+				<label class="form-label d-flex align-items-start">
+					Tagget link
+					<div class="svg-icon svg-icon-sm ml-3 cursor-pointer"
+							 data-container="body"
+							 data-toggle="popover"
+							 data-trigger="click"
+							 data-placement="right" 
+							 data-html="true"
+							 data-offset="200% 11px"
+							 data-content="{click_id} - уникальный идентификатор клика;<br>{partner_id} - ID партнера;<br>{offer_id} - ID оффера;<br>{sub_id_1..10} - SubId #1 - SubId #10." data-offset="30% 11px">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="8" cy="8" r="6.5" stroke="#9099B1"></circle>
+							<rect x="7" y="7" width="2" height="5" rx="1" fill="#9099B1"></rect>
+							<rect width="2" height="2" rx="1" transform="matrix(1 0 0 -1 7 6)" fill="#9099B1"></rect>
+						</svg>
+					</div>
+				</label>
 				<input type="text" class="form-control form-control-solid" value="https://targetlink.au">
 			</div>
 			<div class="form-group mb-10">

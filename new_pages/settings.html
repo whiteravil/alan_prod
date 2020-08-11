@@ -189,12 +189,7 @@
 		<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
 			<div id="kt_header" class="header">
 				<div class=" container-fluid d-flex align-items-center">
-					<div class="h3 m-0 font-weight-extrabold">
-						<a href="#" class="d-inline-flex align-items-center text-dark">
-							<i class="ki ki-arrow-back text-dark mr-5"></i>
-							Admins
-						</a>
-					</div>
+					<div class="h3 m-0 font-weight-extrabold">Settings</div>
 					<div class="header-menu-wrapper header-menu-wrapper-right ml-auto">
 						<div class="header-menu header-menu-mobile header-menu-layout-default align-items-center">
 							<div class="topbar-item">
@@ -262,213 +257,367 @@
 				</div>
 			</div>
 
+			<div class="subheader py-0 subheader-solid" id="kt_subheader">
+				<div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+					<ul class="nav nav-tabs nav-tabs-line nav-boldest border-0" role="tablist">
+						<li class="nav-item mr-0">
+							<a class="nav-link border-radius-0 border-3 py-8 text-dark active" data-toggle="tab" href="#tab-1">
+								<span class="nav-text font-size-h3">Настройка модерации партнеров</span>
+							</a>
+						</li>
+						<li class="nav-item mr-0">
+							<a class="nav-link border-radius-0 border-3 py-8 text-dark" data-toggle="tab" href="#tab-2">
+								<span class="nav-text font-size-h3">Добавление контактов</span>
+							</a>
+						</li>
+						<li class="nav-item mr-0">
+							<a class="nav-link border-radius-0 border-3 py-8 text-dark" data-toggle="tab" href="#tab-3">
+								<span class="nav-text font-size-h3">Трекинг-домены</span>
+							</a>
+						</li>
+						<li class="nav-item mr-0">
+							<a class="nav-link border-radius-0 border-3 py-8 text-dark" data-toggle="tab" href="#tab-4">
+								<span class="nav-text font-size-h3">Категории</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
 			<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-				<div class="d-flex flex-column-fluid py-8">
-					<div class="container">
-						<div class="row">
-							
-							<div class="col" style="width: 30%;flex-basis: 30%">
-								<div class="card border-0">
+				<div class="d-flex flex-column-fluid py-0">
+					<div class="container-fluid">
 
-									<div class="card-header pt-13 border-0 text-white" style="background-color: #B9BFCF">
-										<div class="w-50 ml-auto text-right">
-											<div>ID 1002353</div>
-											<div class="text-white-50">Created 12.09.2020</div>
-										</div>
-									</div>
+						<div class="card card-custom border-0" style="min-height: calc(100vh - 195px)">
+							<div class="card-body">
+								<div class="tab-content mt-0" id="myTabContent">
 
-									<div class="card-body pt-0">
+									<div class="tab-pane fade show active" id="tab-1" role="tabpanel">
 
-										<div class="symbol symbol-circle symbol-100 border-white mt-n22 mb-4 border-3" style="border-style: solid">
-											<span class="symbol-label icon-3x font-weight-extrabold text-light">E</span>
-										</div>
-
-										<div class="icon-xxl font-weight-extrabold mb-7 text-light">Evgeny Ivanov</div>
-
-										<div class="switch-with-bg mb-13 ml-2">
-											<span class="switch switch-primary switch-custom switch-custom-2 switch-sm">
+										<div class="d-flex align-items-center">
+											<div class="mr-4">Премодерация партнеров</div>
+											<span class="switch switch-primary switch-custom">
 												<label class="d-inline-flex align-items-center">
 													<input type="checkbox">
-													<span class="my-0 mr-3"></span>
-													<b></b>
-													Enabled
+													<span></span>
 												</label>
 											</span>
 										</div>
+									</div>
 
-										<div class="navi">
-											<div class="navi-item mb-5">
-												<div class="navi-link p-0">
-													<span class="navi-icon mr-2">
-														<span class="svg-icon">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<rect x="0" y="0" width="24" height="24"></rect>
-																	<path d="M6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 Z M7.5,5 C7.22385763,5 7,5.22385763 7,5.5 C7,5.77614237 7.22385763,6 7.5,6 L13.5,6 C13.7761424,6 14,5.77614237 14,5.5 C14,5.22385763 13.7761424,5 13.5,5 L7.5,5 Z M7.5,7 C7.22385763,7 7,7.22385763 7,7.5 C7,7.77614237 7.22385763,8 7.5,8 L10.5,8 C10.7761424,8 11,7.77614237 11,7.5 C11,7.22385763 10.7761424,7 10.5,7 L7.5,7 Z" fill="#000000" opacity="0.3"></path>
-																	<path d="M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z" fill="#000000"></path>
-																</g>
-															</svg>
-														</span>
-													</span>
-													<span class="navi-text font-size-lg text-dark">mymail@gmail.com</span>
-												</div>
-											</div>
-											<div class="navi-item mb-5">
-												<div class="navi-link p-0">
-													<span class="navi-icon mr-2">
-														<span class="svg-icon">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path opacity="0.3" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#B9BFCF"/>
-																<path d="M6.51219 11.7155L16.2674 8.04492C16.7202 7.8853 17.1156 8.15271 16.9689 8.82085L16.9697 8.82002L15.3087 16.4566C15.1856 16.9981 14.856 17.1297 14.3948 16.8746L11.8653 15.0554L10.6453 16.2024C10.5104 16.334 10.3966 16.4451 10.1352 16.4451L10.3148 13.933L15.0027 9.8C15.2067 9.62474 14.9572 9.52601 14.6882 9.70044L8.89492 13.26L6.39752 12.4997C5.85538 12.3318 5.84357 11.9706 6.51219 11.7155Z" fill="#B9BFCF"/>
-															</svg>
-														</span>
-													</span>
-													<span class="navi-text font-size-lg text-dark">egovoruhin</span>
-												</div>
-											</div>
-										</div>
+									<div class="tab-pane fade" id="tab-2" role="tabpanel">
 
-										<div class="separator separator-solid separator-border-2 mt-10 mb-4"></div>
+										<button class="btn btn-primary mb-10 open-add-goal">Добавление контакта</button>
 
-										<div class="navi mt-10">
-											<div class="navi-item mb-7">
-												<a href="#" class="navi-link p-0 open-edit-profile">
-													<span class="navi-icon mr-2">
-														<span class="svg-icon">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g>
-																	<path opacity="0.3" d="M4 20.1325C4 16 8.00051 13 12.0005 13C16.0005 13 20.0006 16 20.0006 20.1333C20.0006 21 20.0006 21 19.1867 21C15.1724 21 12.7036 21 4.78742 21C4.51573 21 4 21 4 20.1325Z" fill="#B9BFCF"/>
-																	<circle cx="12" cy="7" r="4" fill="#B9BFCF"/>
-																</g>
-															</svg>
-														</span>
-													</span>
-													<span class="navi-text font-size-lg text-dark">Edit profile</span>
-												</a>
-											</div>
-											<div class="navi-item mb-0">
-												<a href="#" class="navi-link p-0 open-change-password">
-													<span class="navi-icon mr-2">
-														<span class="svg-icon">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<g>
-																	<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M4.66699 4.66666L11.6625 3.35501C11.8858 3.31314 12.1149 3.31314 12.3382 3.35501L19.3337 4.66666V13.1761C19.3337 15.8659 17.948 18.366 15.667 19.7917L12.4862 21.7797C12.1889 21.9655 11.8117 21.9655 11.5145 21.7797L8.33366 19.7917C6.05267 18.366 4.66699 15.8659 4.66699 13.1761V4.66666Z" fill="#9099B1"/>
-																	<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 11.0834C10.9878 11.0834 10.167 10.2625 10.167 9.25002C10.167 8.2375 10.9878 7.41669 12.0003 7.41669C13.0128 7.41669 13.8337 8.2375 13.8337 9.25002C13.8337 10.2625 13.0128 11.0834 12.0003 11.0834Z" fill="#9099B1"/>
-																	<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M7.41732 16.1245C7.61472 13.3902 9.58741 12 11.9918 12C14.4301 12 16.4334 13.3138 16.5826 16.125C16.5885 16.237 16.5826 16.5833 16.2 16.5833C14.3129 16.5833 11.5088 16.5833 7.78748 16.5833C7.65976 16.5833 7.40657 16.2735 7.41732 16.1245Z" fill="#9099B1"/>
-																</g>
-															</svg>
-														</span>
-													</span>
-													<span class="navi-text font-size-lg text-dark">Change password</span>
-												</a>
-											</div>
+										<div class="max-w-xxl-900px">
+											<table class="table table-hover w-100 border-bottom">
+												<thead>
+													<tr>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Название контакта</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Требование</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase"></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="align-middle">Электропочта</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-warning label-inline">Необязательный</span>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-profile"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Электропочта</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-warning label-inline">Необязательный</span>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-profile"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Электропочта</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-warning label-inline">Необязательный</span>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-profile"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Электропочта</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-warning label-inline">Необязательный</span>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-profile"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Электропочта</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-warning label-inline">Необязательный</span>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-profile"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Электропочта</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-warning label-inline">Необязательный</span>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-profile"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
 
 									</div>
+
+									<div class="tab-pane fade" id="tab-3" role="tabpanel">
+
+										<button class="btn btn-primary mb-10 open-add-domen">Добавить домен для трекинга</button>
+
+										<div class="max-w-xxl-1000px">
+											<table class="table table-hover w-100 border-bottom">
+												<thead>
+													<tr>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Домен для трекинга</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Протокол</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">По умолчанию</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Статус</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase"></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="align-middle">google.com</td>
+														<td class="align-middle">HTTP</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-success label-inline">Прошел проверку</span>
+														</td>
+														<td class="align-middle">
+															<div class="radio-list">
+																<label class="radio">
+																	<input type="radio" name="radio-1" checked>
+																	<span></span>
+																	Домен по умолчанию
+																</label>
+															</div>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end align-items-center">
+																<button class="btn btn-outline-primary mr-6">Проверить</button>
+																<a href="#" class="text-light mr-6 open-edit-domen"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">google.com</td>
+														<td class="align-middle">HTTP</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-success label-inline">Прошел проверку</span>
+														</td>
+														<td class="align-middle">
+															<div class="radio-list">
+																<label class="radio">
+																	<input type="radio" name="radio-1">
+																	<span></span>
+																	Домен по умолчанию
+																</label>
+															</div>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end align-items-center">
+																<button class="btn btn-outline-primary mr-6">Проверить</button>
+																<a href="#" class="text-light mr-6 open-edit-domen"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">google.com</td>
+														<td class="align-middle">HTTP</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-danger label-inline">Не прошел проверку</span>
+														</td>
+														<td class="align-middle">
+															<div class="radio-list">
+																<label class="radio">
+																	<input type="radio" name="radio-1">
+																	<span></span>
+																	Домен по умолчанию
+																</label>
+															</div>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end align-items-center">
+																<button class="btn btn-outline-primary mr-6">Проверить</button>
+																<a href="#" class="text-light mr-6 open-edit-domen"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">google.com</td>
+														<td class="align-middle">HTTP</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-success label-inline">Прошел проверку</span>
+														</td>
+														<td class="align-middle">
+															<div class="radio-list">
+																<label class="radio">
+																	<input type="radio" name="radio-1">
+																	<span></span>
+																	Домен по умолчанию
+																</label>
+															</div>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end align-items-center">
+																<button class="btn btn-outline-primary mr-6">Проверить</button>
+																<a href="#" class="text-light mr-6 open-edit-domen"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">google.com</td>
+														<td class="align-middle">HTTP</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-success label-inline">Прошел проверку</span>
+														</td>
+														<td class="align-middle">
+															<div class="radio-list">
+																<label class="radio">
+																	<input type="radio" name="radio-1">
+																	<span></span>
+																	Домен по умолчанию
+																</label>
+															</div>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end align-items-center">
+																<button class="btn btn-outline-primary mr-6">Проверить</button>
+																<a href="#" class="text-light mr-6 open-edit-domen"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">google.com</td>
+														<td class="align-middle">HTTP</td>
+														<td class="align-middle">
+															<span class="label label-xl label-light-success label-inline">Прошел проверку</span>
+														</td>
+														<td class="align-middle">
+															<div class="radio-list">
+																<label class="radio">
+																	<input type="radio" name="radio-1">
+																	<span></span>
+																	Домен по умолчанию
+																</label>
+															</div>
+														</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end align-items-center">
+																<button class="btn btn-outline-primary mr-6">Проверить</button>
+																<a href="#" class="text-light mr-6 open-edit-domen"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+									</div>
+
+									<div class="tab-pane fade" id="tab-4" role="tabpanel">
+
+										<button class="btn btn-primary mb-10 open-add-category">Добавить категорию</button>
+
+										<div class="max-w-xxl-600px">
+											<table class="table table-hover w-100 border-bottom">
+												<thead>
+													<tr>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase">Название контакта</th>
+														<th class="align-middle text-gray font-weight-normal text-muted text-uppercase"></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="align-middle">Категория пример 1</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-category"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Категория пример 1</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-category"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Категория пример 1</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-category"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td class="align-middle">Категория пример 1</td>
+														<td class="align-middle">
+															<div class="d-flex justify-content-end">
+																<a href="#" class="text-light mr-6 open-edit-category"><i class="icon-ms fas fa-pen"></i></a>
+																<a href="#" class="text-light"><i class="icon-ms far fa-trash-alt"></i></a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+									</div>
+
 								</div>
+								
 							</div>
-
-							<div class="col" style="width: 70%;flex-basis: 70%">
-								<div class="card card-custom border-0">
-									<div class="card-header py-0">
-										<div class="card-title m-0 w-100">
-											<ul class="nav nav-tabs nav-tabs-line nav-boldest border-0" role="tablist">
-												<li class="nav-item mr-0">
-													<a class="nav-link border-radius-0 border-3 py-8 text-dark active" data-toggle="tab" href="#tab-1">
-														<span class="nav-text font-size-h3">Roles</span>
-													</a>
-												</li>
-												<li class="nav-item mr-0">
-													<a class="nav-link border-radius-0 border-3 py-8 text-dark" data-toggle="tab" href="#tab-2">
-														<span class="nav-text font-size-h3">Products</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="card-body p-0">
-										<div class="d-flex">
-											<div class="px-6 py-7 border-right" style="width: 40%">
-												<div class="navi navi-hover navi-link-rounded navi-active">
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Summary</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4 d-flex align-items-center">
-															<span class="navi-text font-size-lg text-dark">Role name 1</span>
-															<span class="switch switch-primary switch-custom">
-																<label class="d-inline-flex align-items-center">
-																	<input type="checkbox">
-																	<span></span>
-																</label>
-															</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4 font-weight-extrabold active">
-															<span class="navi-text font-size-lg text-dark">Hovered & chosed</span>
-															<span class="switch switch-primary switch-custom">
-																<label class="d-inline-flex align-items-center">
-																	<input type="checkbox">
-																	<span></span>
-																</label>
-															</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Role name 3</span>
-															<span class="switch switch-primary switch-custom">
-																<label class="d-inline-flex align-items-center">
-																	<input type="checkbox" checked>
-																	<span></span>
-																</label>
-															</span>
-														</span>
-													</div>
-													<div class="navi-item navi-item-border">
-														<span href="#" class="navi-link px-4 py-4">
-															<span class="navi-text font-size-lg text-dark">Role name long 4</span>
-															<span class="switch switch-primary switch-custom">
-																<label class="d-inline-flex align-items-center">
-																	<input type="checkbox" checked>
-																	<span></span>
-																</label>
-															</span>
-														</span>
-													</div>
-												</div>
-												<button class="btn btn-light-primary font-weight-bolder mt-7" id="roles-toggle">Create New role</button>
-											</div>
-											<div class="px-6 py-7" style="width: 60%">
-												<div class="mb-7">
-													<div class="font-weight-extrabold mb-4">Дашборд</div>
-													<div class="mb-3"><a href="#" class="text-dark">Доступ к дашборду</a></div>
-												</div>
-												<div class="mb-7">
-													<div class="font-weight-extrabold mb-4">Администраторы</div>
-													<div class="mb-3"><a href="#" class="text-dark">Просмотр списка администраторов</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Создание администраторов</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Отключение администраторов</a></div>
-												</div>
-												<div class="mb-7">
-													<div class="font-weight-extrabold mb-4">Рекламодатели</div>
-													<div class="mb-3"><a href="#" class="text-dark">Просмотр списка рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Отключение администраторов</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Создание рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Просмотр рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Бан и разбан рекламодателей</a></div>
-													<div class="mb-3"><a href="#" class="text-dark">Редактирование рекламодателей</a></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
+							
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -477,302 +626,10 @@
 	</div>
 </div>
 
-<div id="roles" class="offcanvas offcanvas-right p-10">
+<div id="add-goal" class="offcanvas offcanvas-right p-10">
 	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
 		<h1 class="font-weight-extrabold m-0">
-			New Role
-		</h1>
-		<a href="#" id="roles-close">
-			<i class="ki ki-close icon-md text-dark"></i>
-		</a>
-	</div>
-	<div class="offcanvas-content pr-5 mr-n5 pb-10" id="roles-content">
-		<form class="rules-form">
-			<div class="form-group">
-				<label class="form-label">Name of Role</label>
-				<input type="text" class="form-control form-control-solid">
-			</div>
-			<div class="form-group">
-				<label class="form-label">Slug</label>
-				<input type="text" class="form-control form-control-solid">
-			</div>
-			<div class="font-size-h3 font-weight-extrabold pt-4 mb-6">Доступы</div>
-			<div class="accordion accordion-light accordion-toggle-arrow">
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold" data-toggle="collapse" data-target="#accesses-accordion-1">Дашборд</div>
-					</div>
-					<div id="accesses-accordion-1" class="collapse show">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold" data-toggle="collapse" data-target="#accesses-accordion-2">Рекламодатели</div>
-					</div>
-					<div id="accesses-accordion-2" class="collapse show">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Отключение администраторов
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Создание рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Бан и разбан рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Редактирование рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold" data-toggle="collapse" data-target="#accesses-accordion-3">Партнеры</div>
-					</div>
-					<div id="accesses-accordion-3" class="collapse show">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Отключение администраторов
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Создание рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Бан и разбан рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Редактирование рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-4">Продукты</div>
-					</div>
-					<div id="accesses-accordion-4" class="collapse">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Отключение администраторов
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Создание рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Бан и разбан рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Редактирование рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-5">Статистика</div>
-					</div>
-					<div id="accesses-accordion-5" class="collapse">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Отключение администраторов
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Создание рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Бан и разбан рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Редактирование рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-6">Выплаты</div>
-					</div>
-					<div id="accesses-accordion-6" class="collapse">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Отключение администраторов
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Создание рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Бан и разбан рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Редактирование рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 mb-2">
-					<div class="card-header mb-4">
-						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-7">Настройки</div>
-					</div>
-					<div id="accesses-accordion-7" class="collapse">
-						<div class="card-body">
-							<div class="checkbox-list">
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр списка рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Отключение администраторов
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Создание рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Просмотр рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Бан и разбан рекламодателей
-								</label>
-								<label class="checkbox mb-3 font-size-h6">
-									<input type="checkbox" checked>
-									<span></span>
-									Редактирование рекламодателей
-								</label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="d-flex mt-10">
-				<button type="button" class="btn btn-primary mr-6 py-4 icon-ms font-weight-bolder">Save changes</button>
-				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
-			</div>
-		</form>
-	</div>
-</div>
-
-<div id="change-password" class="offcanvas offcanvas-right p-10">
-	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
-		<h1 class="font-weight-extrabold m-0">
-			Change password
+			Добавление контакта
 		</h1>
 		<a href="#" class="canvas-close">
 			<i class="ki ki-close icon-md text-dark"></i>
@@ -781,27 +638,22 @@
 	<div class="offcanvas-content pr-5 mr-n5 pb-10">
 		<form class="rules-form">
 			<div class="form-group">
-				<div class="d-flex justify-content-between">
-					<label class="form-label">Current password</label>
-					<a href="#" class="text-primary text-hover-primary">
-						Forgot?
-					</a>
-				</div>
-				<input type="password" class="form-control form-control-solid is-invalid" value="123456">
-				<div class="invalid-feedback">Неверный пароль</div>
+				<label class="form-label">Название контакта</label>
+				<input type="text" class="form-control form-control-solid" placeholder="Введите название контакта">
 			</div>
-			<div class="form-group">
-				<label class="form-label">New password</label>
-				<input type="password" class="form-control form-control-solid">
-				<span class="form-text text-light">От 8 до 28 латинских букв и символов</span>
+			<div class="form-group d-flex align-items-center">
+				<label class="mr-4 mb-0 form-label">Обязательный параметр</label>
+				<span class="switch switch-primary switch-custom">
+					<label class="d-inline-flex align-items-center">
+						<input type="checkbox">
+						<span></span>
+					</label>
+				</span>
 			</div>
-			<div class="form-group">
-				<label class="form-label">Repeat New password</label>
-				<input type="password" class="form-control form-control-solid">
-			</div>
-			<div class="d-flex mt-10">
-				<button type="button" class="btn btn-primary mr-6 py-4 icon-ms font-weight-bolder">Save changes</button>
+			<hr>
+			<div class="d-flex mt-10 justify-content-between">
 				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+				<button type="button" class="btn btn-primary py-4 icon-ms font-weight-bolder">Create</button>
 			</div>
 		</form>
 	</div>
@@ -810,7 +662,7 @@
 <div id="edit-profile" class="offcanvas offcanvas-right p-10">
 	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
 		<h1 class="font-weight-extrabold m-0">
-			Edit profile
+			Редактирование контакта
 		</h1>
 		<a href="#" class="canvas-close">
 			<i class="ki ki-close icon-md text-dark"></i>
@@ -819,24 +671,136 @@
 	<div class="offcanvas-content pr-5 mr-n5 pb-10">
 		<form class="rules-form">
 			<div class="form-group">
-				<label class="form-label">Name</label>
-				<input type="text" class="form-control form-control-solid">
+				<label class="form-label">Название контакта</label>
+				<input type="text" class="form-control form-control-solid" value="Название контакта">
 			</div>
-			<div class="form-group">
-				<label class="form-label">Second name</label>
-				<input type="text" class="form-control form-control-solid">
+			<div class="form-group d-flex align-items-center">
+				<label class="mr-4 mb-0 form-label">Обязательный параметр</label>
+				<span class="switch switch-primary switch-custom">
+					<label class="d-inline-flex align-items-center">
+						<input type="checkbox" checked>
+						<span></span>
+					</label>
+				</span>
 			</div>
-			<div class="form-group">
-				<label class="form-label">Email</label>
-				<input type="email" class="form-control form-control-solid">
-			</div>
-			<div class="form-group">
-				<label class="form-label">Telegram</label>
-				<input type="text" class="form-control form-control-solid">
-			</div>
-			<div class="d-flex mt-10">
-				<button type="button" class="btn btn-primary mr-6 py-4 icon-ms font-weight-bolder">Save changes</button>
+			<hr>
+			<div class="d-flex mt-10 justify-content-between">
 				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+				<button type="button" class="btn btn-primary py-4 icon-ms font-weight-bolder">Save</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="add-domen" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Добавление домена
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">Название домена</label>
+				<input type="text" class="form-control form-control-solid" placeholder="Введите название домена">
+			</div>
+			<div class="form-group d-flex align-items-center">
+				<label class="mr-4 mb-0 form-label">HTTPS</label>
+				<span class="switch switch-primary switch-custom">
+					<label class="d-inline-flex align-items-center">
+						<input type="checkbox">
+						<span></span>
+					</label>
+				</span>
+			</div>
+			<hr>
+			<div class="d-flex mt-10 justify-content-between">
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+				<button type="button" class="btn btn-primary py-4 icon-ms font-weight-bolder">Create</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="edit-domen" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Редактирование домена
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">Название домена</label>
+				<input type="text" class="form-control form-control-solid" value="exampledomen">
+			</div>
+			<div class="form-group d-flex align-items-center">
+				<label class="mr-4 mb-0 form-label">HTTPS</label>
+				<span class="switch switch-primary switch-custom">
+					<label class="d-inline-flex align-items-center">
+						<input type="checkbox" checked>
+						<span></span>
+					</label>
+				</span>
+			</div>
+			<hr>
+			<div class="d-flex mt-10 justify-content-between">
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+				<button type="button" class="btn btn-primary py-4 icon-ms font-weight-bolder">Save</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="add-category" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Добавление категории
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">Название категории</label>
+				<input type="text" class="form-control form-control-solid" placeholder="Введите название категории">
+			</div>
+			<hr>
+			<div class="d-flex mt-10 justify-content-between">
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+				<button type="button" class="btn btn-primary py-4 icon-ms font-weight-bolder">Create</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="edit-category" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Редактирование категории
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">Название категории</label>
+				<input type="text" class="form-control form-control-solid" value="Название категории">
+			</div>
+			<hr>
+			<div class="d-flex mt-10 justify-content-between">
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+				<button type="button" class="btn btn-primary py-4 icon-ms font-weight-bolder">Save</button>
 			</div>
 		</form>
 	</div>
@@ -911,6 +875,7 @@
 <script src="assets/js/scripts.bundle.js?v=7.0.6"></script>
 <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.6"></script>
 <script src="assets/js/pages/widgets.js?v=7.0.6"></script>
+<script src="/metronic/theme/html/demo1/dist/assets/js/pages/crud/forms/widgets/bootstrap-daterangepicker.js?v=7.0.8"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

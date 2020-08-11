@@ -189,12 +189,7 @@
 		<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
 			<div id="kt_header" class="header">
 				<div class=" container-fluid d-flex align-items-center">
-					<div class="h3 m-0 font-weight-extrabold">
-						<a href="#" class="d-inline-flex align-items-center text-dark">
-							<i class="ki ki-arrow-back text-dark mr-5"></i>
-							Admins
-						</a>
-					</div>
+					<div class="h3 m-0 font-weight-extrabold">My profile</div>
 					<div class="header-menu-wrapper header-menu-wrapper-right ml-auto">
 						<div class="header-menu header-menu-mobile header-menu-layout-default align-items-center">
 							<div class="topbar-item">
@@ -285,17 +280,6 @@
 
 										<div class="icon-xxl font-weight-extrabold mb-7">Evgeny Ivanov</div>
 
-										<div class="switch-with-bg mb-13 ml-2">
-											<span class="switch switch-primary switch-custom switch-custom-2 switch-sm">
-												<label class="d-inline-flex align-items-center">
-													<input type="checkbox" checked>
-													<span class="my-0 mr-3"></span>
-													<b></b>
-													Enabled
-												</label>
-											</span>
-										</div>
-
 										<div class="navi">
 											<div class="navi-item mb-5">
 												<div class="navi-link p-0">
@@ -330,24 +314,35 @@
 
 										<div class="separator separator-solid separator-border-2 mt-10 mb-4"></div>
 
-										<div class="navi navi-hover navi-link-rounded navi-active">
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-10 py-4">
-													<span class="navi-text font-size-lg text-dark">Managed products</span>
-												</a>
-											</div>
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-10 py-4">
-													<span class="navi-text font-size-lg text-dark">Roles</span>
-												</a>
-											</div>
-											<div class="navi-item mb-1">
-												<a href="#" class="navi-link pl-10 py-4">
-													<span class="navi-text font-size-lg text-dark active">Edit profile</span>
+										<div class="navi mt-10">
+											<div class="navi-item mb-7">
+												<a href="#" class="navi-link p-0 open-edit-profile">
+													<span class="navi-icon mr-2">
+														<span class="svg-icon">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<g>
+																	<path opacity="0.3" d="M4 20.1325C4 16 8.00051 13 12.0005 13C16.0005 13 20.0006 16 20.0006 20.1333C20.0006 21 20.0006 21 19.1867 21C15.1724 21 12.7036 21 4.78742 21C4.51573 21 4 21 4 20.1325Z" fill="#B9BFCF"/>
+																	<circle cx="12" cy="7" r="4" fill="#B9BFCF"/>
+																</g>
+															</svg>
+														</span>
+													</span>
+													<span class="navi-text font-size-lg text-dark">Edit profile</span>
 												</a>
 											</div>
 											<div class="navi-item mb-0">
-												<a href="#" class="navi-link pl-10 py-4" id="change-password-toggle">
+												<a href="#" class="navi-link p-0 open-change-password">
+													<span class="navi-icon mr-2">
+														<span class="svg-icon">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<g>
+																	<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M4.66699 4.66666L11.6625 3.35501C11.8858 3.31314 12.1149 3.31314 12.3382 3.35501L19.3337 4.66666V13.1761C19.3337 15.8659 17.948 18.366 15.667 19.7917L12.4862 21.7797C12.1889 21.9655 11.8117 21.9655 11.5145 21.7797L8.33366 19.7917C6.05267 18.366 4.66699 15.8659 4.66699 13.1761V4.66666Z" fill="#9099B1"/>
+																	<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M12.0003 11.0834C10.9878 11.0834 10.167 10.2625 10.167 9.25002C10.167 8.2375 10.9878 7.41669 12.0003 7.41669C13.0128 7.41669 13.8337 8.2375 13.8337 9.25002C13.8337 10.2625 13.0128 11.0834 12.0003 11.0834Z" fill="#9099B1"/>
+																	<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M7.41732 16.1245C7.61472 13.3902 9.58741 12 11.9918 12C14.4301 12 16.4334 13.3138 16.5826 16.125C16.5885 16.237 16.5826 16.5833 16.2 16.5833C14.3129 16.5833 11.5088 16.5833 7.78748 16.5833C7.65976 16.5833 7.40657 16.2735 7.41732 16.1245Z" fill="#9099B1"/>
+																</g>
+															</svg>
+														</span>
+													</span>
 													<span class="navi-text font-size-lg text-dark">Change password</span>
 												</a>
 											</div>
@@ -359,34 +354,75 @@
 
 							<div class="col" style="width: 70%;flex-basis: 70%">
 								<div class="card card-custom border-0">
-									<div class="card-header">
-										<div class="card-title">
-											<h3 class="card-label font-weight-extrabold font-size-h3">Edit profile</h3>
-										</div>
-										<div class="d-flex my-auto">
-											<button type="button" class="btn btn-sm btn-secondary px-5 font-weight-bolder mr-5" disabled>Save changes</button>
-											<button type="button" class="btn btn-sm btn-secondary px-5 font-weight-bolder" disabled>Cancel</button>
+									<div class="card-header py-0">
+										<div class="card-title m-0 w-100">
+											<ul class="nav nav-tabs nav-tabs-line nav-boldest border-0" role="tablist">
+												<li class="nav-item mr-0">
+													<a class="nav-link border-radius-0 border-2 py-8 text-dark active" data-toggle="tab" href="#tab-1">
+														<span class="nav-text font-size-h3">Roles</span>
+													</a>
+												</li>
+												<li class="nav-item mr-0">
+													<a class="nav-link border-radius-0 border-2 py-8 text-dark" data-toggle="tab" href="#tab-2">
+														<span class="nav-text font-size-h3">Products</span>
+													</a>
+												</li>
+											</ul>
 										</div>
 									</div>
-									<div class="card-body">
-										<form class="form mx-auto py-5" style="width: 383px">
-											<div class="form-group">
-												<label class="form-label">Name</label>
-												<input type="text" class="form-control form-control-solid">
+									<div class="card-body p-0">
+										<div class="d-flex">
+											<div class="px-6 py-7 border-right" style="width: 40%">
+												<div class="navi navi-hover navi-link-rounded navi-active">
+													<div class="navi-item navi-item-border">
+														<span href="#" class="navi-link px-4 py-4">
+															<span class="navi-text font-size-lg text-dark">Summary</span>
+														</span>
+													</div>
+													<div class="navi-item navi-item-border">
+														<span href="#" class="navi-link px-4 py-4 d-flex align-items-center">
+															<span class="navi-text font-size-lg text-dark">Role name 1</span>
+														</span>
+													</div>
+													<div class="navi-item navi-item-border">
+														<span href="#" class="navi-link px-4 py-4 font-weight-extrabold active">
+															<span class="navi-text font-size-lg text-dark">Hovered & chosed</span>
+														</span>
+													</div>
+													<div class="navi-item navi-item-border">
+														<span href="#" class="navi-link px-4 py-4">
+															<span class="navi-text font-size-lg text-dark">Role name 3</span>
+														</span>
+													</div>
+													<div class="navi-item navi-item-border">
+														<span href="#" class="navi-link px-4 py-4">
+															<span class="navi-text font-size-lg text-dark">Role name long 4</span>
+														</span>
+													</div>
+												</div>
 											</div>
-											<div class="form-group">
-												<label class="form-label">Second name</label>
-												<input type="text" class="form-control form-control-solid">
+											<div class="px-6 py-7" style="width: 60%">
+												<div class="mb-7">
+													<div class="font-weight-extrabold mb-4">Дашборд</div>
+													<div class="mb-3"><a href="#" class="text-dark">Доступ к дашборду</a></div>
+												</div>
+												<div class="mb-7">
+													<div class="font-weight-extrabold mb-4">Администраторы</div>
+													<div class="mb-3"><a href="#" class="text-dark">Просмотр списка администраторов</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Создание администраторов</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Отключение администраторов</a></div>
+												</div>
+												<div class="mb-7">
+													<div class="font-weight-extrabold mb-4">Рекламодатели</div>
+													<div class="mb-3"><a href="#" class="text-dark">Просмотр списка рекламодателей</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Отключение администраторов</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Создание рекламодателей</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Просмотр рекламодателей</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Бан и разбан рекламодателей</a></div>
+													<div class="mb-3"><a href="#" class="text-dark">Редактирование рекламодателей</a></div>
+												</div>
 											</div>
-											<div class="form-group">
-												<label class="form-label">Email</label>
-												<input type="email" class="form-control form-control-solid">
-											</div>
-											<div class="form-group">
-												<label class="form-label">Telegram</label>
-												<input type="text" class="form-control form-control-solid">
-											</div>
-										</form>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -397,6 +433,371 @@
 			</div>
 
 		</div>
+	</div>
+</div>
+
+<div id="roles" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			New Role
+		</h1>
+		<a href="#" id="roles-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10" id="roles-content">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">Name of Role</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Slug</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="font-size-h3 font-weight-extrabold pt-4 mb-6">Доступы</div>
+			<div class="accordion accordion-light accordion-toggle-arrow">
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold" data-toggle="collapse" data-target="#accesses-accordion-1">Дашборд</div>
+					</div>
+					<div id="accesses-accordion-1" class="collapse show">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold" data-toggle="collapse" data-target="#accesses-accordion-2">Рекламодатели</div>
+					</div>
+					<div id="accesses-accordion-2" class="collapse show">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Отключение администраторов
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Создание рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Бан и разбан рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Редактирование рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold" data-toggle="collapse" data-target="#accesses-accordion-3">Партнеры</div>
+					</div>
+					<div id="accesses-accordion-3" class="collapse show">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Отключение администраторов
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Создание рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Бан и разбан рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Редактирование рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-4">Продукты</div>
+					</div>
+					<div id="accesses-accordion-4" class="collapse">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Отключение администраторов
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Создание рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Бан и разбан рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Редактирование рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-5">Статистика</div>
+					</div>
+					<div id="accesses-accordion-5" class="collapse">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Отключение администраторов
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Создание рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Бан и разбан рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Редактирование рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-6">Выплаты</div>
+					</div>
+					<div id="accesses-accordion-6" class="collapse">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Отключение администраторов
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Создание рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Бан и разбан рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Редактирование рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 mb-2">
+					<div class="card-header mb-4">
+						<div class="text-arrow text-muted font-weight-extrabold collapsed" data-toggle="collapse" data-target="#accesses-accordion-7">Настройки</div>
+					</div>
+					<div id="accesses-accordion-7" class="collapse">
+						<div class="card-body">
+							<div class="checkbox-list">
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр списка рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Отключение администраторов
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Создание рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Просмотр рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Бан и разбан рекламодателей
+								</label>
+								<label class="checkbox mb-3 font-size-h6">
+									<input type="checkbox" checked>
+									<span></span>
+									Редактирование рекламодателей
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex mt-10">
+				<button type="button" class="btn btn-primary mr-6 py-4 icon-ms font-weight-bolder">Save changes</button>
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="change-password" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Change password
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<div class="d-flex justify-content-between">
+					<label class="form-label">Current password</label>
+					<a href="#" class="text-primary text-hover-primary">
+						Forgot?
+					</a>
+				</div>
+				<input type="password" class="form-control form-control-solid is-invalid" value="123456">
+				<div class="invalid-feedback">Неверный пароль</div>
+			</div>
+			<div class="form-group">
+				<label class="form-label">New password</label>
+				<input type="password" class="form-control form-control-solid">
+				<span class="form-text text-light">От 8 до 28 латинских букв и символов</span>
+			</div>
+			<div class="form-group">
+				<label class="form-label">Repeat New password</label>
+				<input type="password" class="form-control form-control-solid">
+			</div>
+			<div class="d-flex mt-10">
+				<button type="button" class="btn btn-primary mr-6 py-4 icon-ms font-weight-bolder">Save changes</button>
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="edit-profile" class="offcanvas offcanvas-right p-10">
+	<div class="offcanvas-header d-flex align-items-center justify-content-between pb-10">
+		<h1 class="font-weight-extrabold m-0">
+			Edit profile
+		</h1>
+		<a href="#" class="canvas-close">
+			<i class="ki ki-close icon-md text-dark"></i>
+		</a>
+	</div>
+	<div class="offcanvas-content pr-5 mr-n5 pb-10">
+		<form class="rules-form">
+			<div class="form-group">
+				<label class="form-label">Name</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Second name</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Email</label>
+				<input type="email" class="form-control form-control-solid">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Telegram</label>
+				<input type="text" class="form-control form-control-solid">
+			</div>
+			<div class="d-flex mt-10">
+				<button type="button" class="btn btn-primary mr-6 py-4 icon-ms font-weight-bolder">Save changes</button>
+				<button type="button" class="btn btn-secondary mr-6 py-4 icon-ms font-weight-bolder">Cancel</button>
+			</div>
+		</form>
 	</div>
 </div>
 
